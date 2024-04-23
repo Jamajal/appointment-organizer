@@ -35,7 +35,7 @@ const AnimatedInput: React.FC<AnimatedInputProps> = ({
       <label
         className={`absolute transition-all duration-300 text-purple-500 ${
           focused || content
-            ? 'text-sm sm:text-[9px] md:text-[10px] text-gray-600 top-2 sm:top-[6px] md:top-[6px] left-3'
+            ? 'text-[12px] sm:text-[9px] md:text-[10px] text-gray-600 top-2 sm:top-[6px] md:top-[6px] left-3'
             : 'top-1/4 sm:text-[12px] md:text-[12px] left-3'
         } transform ${
           focused || content ? '-translate-y-1/2' : 'translate-y-0'

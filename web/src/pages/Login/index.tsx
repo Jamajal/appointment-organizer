@@ -82,7 +82,7 @@ const Login = () => {
           <h2 className="text-xl sm:text-lg md:text-lg">
             {authenticationMode == 'login'
               ? 'Faça seu login aqui!'
-              : 'Cadastra-se para utilizar a plataforma!'}
+              : 'Cadastre-se para utilizar a plataforma!'}
           </h2>
         </div>
 

@@ -7,9 +7,11 @@ import {
 
 import Login from '../pages/Login';
 import Home from '../pages/Home';
+import MyProjects from '../pages/MyProjects';
+import MySchedule from '../pages/MySchedule';
 
 const Private = ({ children }: { children: ReactNode }) => {
-  const authentication = false;
+  const authentication = true;
 
   if (!authentication) return <Navigate to="/login" />;
 
@@ -28,6 +30,22 @@ const router = createBrowserRouter([
   {
     path: '/login',
     element: <Login />,
+  },
+  {
+    path: '/projects',
+    element: (
+      <Private>
+        <MyProjects />
+      </Private>
+    ),
+  },
+  {
+    path: '/schedule',
+    element: (
+      <Private>
+        <MySchedule />
+      </Private>
+    ),
   },
 ]);
 
