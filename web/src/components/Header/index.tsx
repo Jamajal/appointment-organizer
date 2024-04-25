@@ -14,7 +14,7 @@ const Header = () => {
   }, []);
 
   return (
-    <div className="flex items-center justify-between px-10 md:px-4 sm:px-2 shadow-md  shadow-gray-500 bg-purple-400">
+    <div className="fixed w-full flex items-center justify-between px-10 md:px-4 sm:px-2 z-10 shadow-md shadow-gray-500 bg-purple-400">
       <Link to="/">
         <img className="w-24 md:w-16 sm:w-14" src={logoIcon} />
       </Link>
