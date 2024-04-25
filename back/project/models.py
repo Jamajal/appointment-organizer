@@ -7,7 +7,7 @@ import string
 class Project(models.Model):
     name = models.CharField(max_length=24)
     description = models.TextField()
-    code = models.CharField(max_length=20, unique=True)
+    code = models.CharField(max_length=20, unique=True, null=True   )
     created_at = models.DateTimeField(auto_now_add=True)
     
     # Histórico
